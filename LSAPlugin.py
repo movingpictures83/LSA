@@ -17,7 +17,6 @@ class LSAPlugin:
       self.m = len(lines)
       self.samples = []
       self.bacteria = self.firstline.split(',')
-      print self.bacteria
       if (self.bacteria.count('\"\"') != 0):
          self.bacteria.remove('\"\"')
       self.n = len(self.bacteria)
@@ -28,7 +27,6 @@ class LSAPlugin:
             self.ADJ.append([])
             contents = lines[i].split(',')
             self.samples.append(contents[0])
-            print i, self.n, len(contents)
             for j in range(self.n):
                value = float(contents[j+1].strip())
                self.ADJ[i].append(value)#[j] = value
@@ -43,7 +41,6 @@ class LSAPlugin:
        # From Ruan et al, 2006
       for b1 in range(0, self.n):
         for b2 in range(b1+1, self.n):
-          print "PAIR: ", b1, " AND ", b2
           #if (b1 != b2):
           self.P = []
           self.N = []
