@@ -1,0 +1,2 @@
+Prefix plugins/LSA/example/
+Plugin LSA inputfile abundN.csv outputfile abundN.LSA.csv
