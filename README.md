@@ -2,7 +2,7 @@
 # Language: Python
 # Input: CSV (abundances)
 # Output: CSV (associations)
-# Tested with: PluMA 1.0, Python 2.7
+# Tested with: PluMA 1.0, Python 3.6
 
 PluMA plugin to run Local Similarity Analysis (Ruan, 2006),
 a technique for computing complex and nonlinear associations
